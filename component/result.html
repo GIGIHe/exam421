@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="applicable-device" content="mobile">
+    <title></title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="../css/public.css" rel="stylesheet" type="text/css" />
+    <link href="../css/result.css" rel="stylesheet" type="text/css" />
+    <link href="http://bj.offcn.com/zg/common/css/animate.wow.css" rel="stylesheet" type="text/css" />
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/wow.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <!-- <script src="../data/dataList.js"></script> -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/extend.js"></script>
+    <script src="../js/jquery.tmpl.min.js"></script>
+    <script>
+        window.onresize = function() {
+            change()
+        }
+        function change() {
+
+            var deviceWidth = document.documentElement.clientWidth;
+
+            var deviceHeight = document.documentElement.clientHeight;
+
+            if(deviceWidth > 750) deviceWidth = 750;
+
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+
+            $('.zg_wrapper').css('min-height', deviceHeight)
+
+        }
+
+        change();
+
+    </script>
+</head>
+<body>
+   <div class="res-con">
+        <h1 class="result_title home_title"><img src="../images/h1.png" class="title_img" alt="考试匹配系统"><div class="chilun"></div></h1>
+        <div class="resls">
+            <div class="h1">
+                <span class="go-back">返回</span>
+            </div>
+            <!-- <div class="itm-nav">
+                <span class="on">公务员</span>
+                <span>事业单位</span>
+                <span>社区</span>
+                <span>教师招聘</span>
+                <span>银行</span>
+                <span>国企</span>
+                <span>教资</span>
+                <span>军队文职</span>
+                <span>医疗</span>
+                <span>考研</span>
+            </div> -->
+            <div class="ress">
+                <!-- 查询有结果 -->
+                <ul class="lists wow fadeInUp" id="lists"></ul>
+                <!-- 查询无结果 -->
+                <div class="no-res" style="display: none;">
+                    <img src="../images/no.png" alt="">
+                    <p>该类项目暂时没有适合你的岗位哦~</p>
+                </div>
+            </div>
+        </div>
+   </div>
+   <script id="myTemp" type="text/x-jquery-tmpl">
+    　 <li class="result2">
+        <img src="${img}" alt="">
+        <div class="desl">
+            <h2 title='${item01}'>${item01}</h2>
+            <div class="bs-time" title='${time}'>
+                ${time}
+            </div>
+            <div class="bs-sub">
+                <p title='${kemu}'>
+                    ${kemu}  
+                </p>
+                <a href="${links}">
+                    查看详情>>
+                </a>
+            </div>
+        </div>
+    </li>
+    </script>
+    <script>
+         var res_data=[];
+        if(window.LS.get("res_data")){
+            res_data=JSON.parse(window.LS.get('res_data'));
+        }
+        console.log(res_data)
+        if(res_data.length>0){
+            $("#myTemp").tmpl(res_data).appendTo("#lists");
+        }else{
+            $('#lists').hide()
+            $('.no-res').show()
+        }
+       $(".go-back").click(function(){
+        //    window.location.href = 'index.html'
+            window.history.go(-1)
+       })
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.my-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: url(../images/my.png) no-repeat center top #f2f2f2;
+    -webkit-background-size:7.5rem 4.93rem;
+    background-size:7.5rem  4.93rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+.my-con img.title_img{
+    margin-left: .16rem;
+}
+.my-con .my-foot{
+    width: 7.1rem;
+    height: 2.64rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.my-con .my-foot img{
+    display: block;
+    margin: auto;
+    width: 7.1rem;
+}
+.my-con .poster{
+    margin-bottom: 0.9rem;
+}
+.my-con  .poster-img{
+    width: 1.52rem;
+    height: 1.52rem;
+    margin: auto;
+}
+.my-con  .poster-img img{
+    width: 1.52rem;
+    height: 1.52rem;
+    display: block;
+}
+.my-con .username{
+    font:400 .24rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+.my-con .my-items{
+    width: 7.5rem; 
+    position: relative;
+    z-index: 99;
+}
+.my-con .my-items li{
+    padding: .3rem;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 0.2rem;
+}
+.my-con .my-items li a{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-con .my-items li .li-l{
+    display: flex;
+    align-items: center;
+}
+.my-con .my-items li .li-l .icon-logo{
+    width: .28rem;
+    height: .28rem;
+    margin-left: .02rem;  
+    margin-right: 0.1rem; 
+}
+.my-con .my-items li:nth-child(1) .li-l .icon-logo{
+    background: url(../images/icon1.png) no-repeat center;
+    -webkit-background-size:.28rem .28rem;
+    background-size:.28rem  .28rem;
+}
+.my-con .my-items li:nth-child(2) .li-l .icon-logo{
+    background: url(../images/icon2.png) no-repeat center;
+    -webkit-background-size:.28rem .28rem;
+    background-size:.28rem  .28rem;
+}
+.my-con .my-items li:nth-child(3) .li-l .icon-logo{
+    background: url(../images/icon3.png) no-repeat center;
+    -webkit-background-size:.28rem .28rem;
+    background-size:.28rem  .28rem;
+}
+.my-con .my-items li:nth-child(4) .li-l .icon-logo{
+    background: url(../images/icon4.png) no-repeat center;
+    -webkit-background-size:.28rem .28rem;
+    background-size:.28rem  .28rem;
+}
+.my-con .my-items li .kc-name{
+    font:400 .26rem/.32rem "microsoft yahei";
+    color:#666666;
+    text-align: left;
+}
+.my-con .my-items li .icon-go{
+    font:400 .24rem "microsoft yahei";
+    color:#c5c5c5;
+}
+.my-con .my-items li .icon-go span{
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.my-con .my-items li .icon-go i{
+    display: inline-block;
+    width: .15rem;
+    height: .27rem;
+    background: url(../images/arr.png) no-repeat center;
+    -webkit-background-size:.15rem;
+    background-size:.15rem;
+    vertical-align: middle;
+}
+.logout{
+    font-size: .26rem;
+    text-align: center;
+    width: 7.5rem;
+    height: 0.9rem;
+    line-height: .9rem;
+    margin: auto;
+    color: #666666;
+    background: #fff;
+    position: relative;
+    z-index: 99;
+}

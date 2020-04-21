@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="applicable-device" content="mobile">
+    <title></title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="applicable-device" content="mobile">
+    <link href="http://bj.offcn.com/zg/common/css/animate.wow.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public.css" rel="stylesheet" type="text/css" />
+    <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../alert/alert.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/wow.min.js"></script>
+    <script src="../js/loginphp.js"></script>
+    <script src="../alert/alert.js"></script>
+    <script src="../js/storage.js"></script>
+    <script>
+        window.onresize = function() {
+            change()
+        }
+        function change() {
+
+            var deviceWidth = document.documentElement.clientWidth;
+
+            var deviceHeight = document.documentElement.clientHeight;
+
+            if(deviceWidth > 750) deviceWidth = 750;
+
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        }
+        change();
+    </script>
+    
+</head>
+<body>
+    <div class="log-con">
+        <header>
+            <i class="go-back"></i>
+            <p class="login">登录</p>
+             <a href="../home.html" class="home">
+                 <p>首页</p>
+                 <i></i>
+             </a>
+        </header>
+        <ul class="log-box">
+            <li>
+                <label for="phone">手机号码：</label>
+                <input type="text" id="phone" placeholder="请输入手机号">
+            </li>
+            <li class="bor-b">
+               <label for="pass">密码：</label>
+               <input type="password" id="pass" placeholder="请输入密码">
+           </li>
+           <input type="button" value="登录" id="submit">
+        </ul>
+        <div class="user">
+            <a href="reset.html">忘记密码?</a>
+            <a href="register.html">用户注册</a>
+        </div>
+    </div>
+    <script src="http://bj.offcn.com/zg/zg_tuiguang/"></script>
+</body>
+</html>

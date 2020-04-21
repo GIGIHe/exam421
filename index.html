@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="applicable-device" content="mobile">
+    <title></title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="applicable-device" content="mobile">
+    <link href="http://bj.offcn.com/zg/common/css/animate.wow.css" rel="stylesheet" type="text/css" />
+    <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/wow.min.js"></script>
+    <script src="./js/extend.js"></script>
+    <script src="./js/start.js"></script>
+    <script>
+    window.onresize = function() {
+        change()
+    }
+    function change() {
+
+        var deviceWidth = document.documentElement.clientWidth;
+
+        var deviceHeight = document.documentElement.clientHeight;
+
+        if(deviceWidth > 750) deviceWidth = 750;
+
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        
+        // $('.zg_wrapper').css('min-height', deviceHeight)
+
+    }
+
+    change();
+    </script>
+    
+</head>
+<body>
+    <!-- 启动页START -->
+		<div class="start-up">
+			<div class="start">
+				<div class="start1 wow bounceIn"></div>
+				<div class="start2 wow bounceIn" data-wow-delay=".4s"></div>
+				<div class="start3 wow bounceIn" data-wow-delay=".8s"></div>
+			</div>
+			<h2 class="wow fadeInUp" data-wow-delay="1.2s">检索考试  一招搞定</h2>
+			<div class="h1tit wow fadeInUp" data-wow-delay="1.5s"></div>
+		</div>
+    <!-- 启动页END -->
+</body>
+</html>

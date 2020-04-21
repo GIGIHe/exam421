@@ -1,0 +1,87 @@
+.collect-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: #fff;
+    font-family: MicrosoftYaHei;
+}
+.collect-con header{
+    margin-bottom: 0.4rem;
+}
+.coll-num{
+	font-size: .26rem;
+	font-weight: normal;
+	line-height: .40rem;
+    color: #999999;
+    text-align: right;
+    margin-right: 0.3rem;
+    margin-bottom: 0.4rem;
+}
+.coll-num span{
+    color: #0a83dc;
+}
+.collect-con .line{
+    width: 7.50rem;
+    height: .01rem;
+    background-color: #dddddd;
+    margin-bottom: 0.3rem;
+}
+.collect-con .collects{
+
+}
+.collect-con .collects li{
+    margin: .3rem auto 0;
+    padding: .3rem 0 .2rem;
+    box-sizing: border-box;
+    width: 6.8rem;
+    background-color: #e4ebf1;
+	border-radius: .1rem;
+}
+.collect-con .collects li h3{
+	font-size: .32rem;
+	font-weight: normal;
+	line-height: .30rem;
+    color: #0a83dc;
+    background: url(../images/roud-line.png) no-repeat left top;
+    -webkit-background-size: .06rem .3rem;
+    background-size: .06rem .3rem;
+    margin-left: 0.24rem;
+    text-indent: .1rem;
+    margin-bottom: .2rem;
+}
+.collect-con .collects li p{
+	font-size: .26rem;
+	font-weight: normal;
+    line-height: .40rem;
+    text-align: justify;
+    color: #666666;
+    padding: 0 .4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+}
+.collect-con .no-coll{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0.3rem;
+    margin-top: 0.14rem;
+}
+.collect-con .no-coll span{
+	font-size: .24rem;
+	font-weight: normal;
+	line-height: .30rem;
+    color: #999999;
+    flex: 1;
+    text-align: right;
+    margin-right: 0.1rem;
+}
+.collect-con .no-coll i{
+    width: 0.26rem;
+    height: 0.26rem;
+    background: url(../images/no-coll.png) no-repeat left top;
+    -webkit-background-size:  0.26rem;
+    background-size:  0.26rem;
+}

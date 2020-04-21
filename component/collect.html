@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="applicable-device" content="mobile">
+    <title></title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="applicable-device" content="mobile">
+    <link href="http://bj.offcn.com/zg/common/css/animate.wow.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public.css" rel="stylesheet" type="text/css" />
+    <link href="../css/login.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../css/reset.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="../css/collect.css"> -->
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/wow.min.js"></script>
+    <script src="../js/collect.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../data/annoce.js"></script>
+    <script>
+        window.onresize = function() {
+            change()
+        }
+        function change() {
+
+            var deviceWidth = document.documentElement.clientWidth;
+
+            var deviceHeight = document.documentElement.clientHeight;
+
+            if(deviceWidth > 750) deviceWidth = 750;
+
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        }
+        change();
+    </script>
+    
+</head>
+<body>
+    <div class="collect-con">
+        <header>
+            <i class="go-back1"></i>
+            <p class="login">我的收藏</p>
+             <a href="../home.html" class="home">
+                 <p>首页</p>
+                 <i></i>
+             </a>
+        </header>
+        <p class="coll-num">共 <span class="nums">0</span> 条</p>
+        <div class="line"></div>
+        <ul class="collects"></ul>
+    </div>
+</body>
+</html>

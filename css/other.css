@@ -1,0 +1,130 @@
+.other-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: url(../images/ban-other.png) no-repeat center top #f2f2f2;
+    -webkit-background-size:7.5rem 2.5rem;
+    background-size:7.5rem 2.5rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box; 
+}
+.other-con .itms-nav{
+    margin-top: 0.55rem;
+    margin-bottom: 0.3rem;
+}
+.other-con .other-items{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 99;
+}
+.other-con .other-items a{
+   width: 33.33333%;
+   height: 1.04rem;
+   font: 400 .24rem/1.04rem "microsoft yahei";
+    color: #333333;
+    background: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+.other-con .other-items a:nth-child(3n){
+    border-right: none;
+}
+.other-con .other-items a:first-child::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: .59rem;
+    height: .3rem;
+    transition: all .2s;
+    background: url(../images/hot.png) no-repeat center top #f2f2f2;
+    -webkit-background-size:.59rem;
+    background-size:.59rem;
+    left: 50%;
+    top: 5%;
+     margin-left: -.295rem;
+    animation:hot 2s  linear infinite alternate;
+    -webkit-animation:hot 2s  linear infinite alternate;
+    -moz-animation:hot 2s  linear infinite alternate;
+    -o-animation:hot 2s  linear infinite alternate;
+    -ms-animation:hot 2s  linear infinite alternate;
+}
+@-webkit-keyframes hot {
+    0%,100%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+ }
+   }
+   @keyframes hot {
+    0%,100%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+ }
+}
+.other-con .other-items a:last-child::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: .59rem;
+    height: .3rem;
+    background: url(../images/new.png) no-repeat center top #f2f2f2;
+    -webkit-background-size:.59rem;
+    background-size:.59rem;
+    left: 50%;
+    top: 5%;
+    margin-left: -.295rem;
+    animation:hot 2s  linear infinite alternate;
+    -webkit-animation:hot 2s  linear infinite alternate;
+    -moz-animation:hot 2s  linear infinite alternate;
+    -o-animation:hot 2s  linear infinite alternate;
+    -ms-animation:hot 2s  linear infinite alternate;
+}
+.other-con .other-foot{
+    width: 7.1rem;
+    height: 2.64rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.other-con .other-foot img{
+    display: block;
+    margin: auto;
+    width: 7.1rem;
+}
+.itms-nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 6.9rem;
+    margin: auto;
+ }
+ .itms-nav span{
+     font:400 .28rem/.5rem 'Microsoft Yahei';
+     color: #0a83dc;
+     text-align: center;
+     width: 1.6rem;
+     height: .5rem;
+     background: url(../images/itm.png) no-repeat center top;
+     -webkit-background-size:1.6rem .5rem;
+     background-size:1.6rem .5rem;
+     margin-bottom: 0.15rem;
+     margin-right: 0.16rem;
+ }
+ .itms-nav span.on{
+     background: url(../images/itm-on.png) no-repeat center top;
+     -webkit-background-size:1.6rem .5rem;
+     background-size:1.6rem .5rem;
+     color: #fff;
+ }
+ .itms-nav span:nth-child(4),
+ .itms-nav span:nth-child(8){
+     margin-right: 0;
+ }

@@ -1,0 +1,361 @@
+.log-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: url(../images/login.png) no-repeat center top #fff;
+    -webkit-background-size:7.5rem 5.69rem;
+    background-size:7.5rem 5.69rem;
+}
+.reg-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: #fff;
+   
+}
+header{
+    width: 7.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem .2rem 0 0rem;
+    box-sizing: border-box;
+    margin-bottom: 4.27rem;
+}
+.reg-con header{
+    margin-bottom: 1.26rem;
+}
+header .go-back{
+    width: .42rem;
+    height: .22rem;
+    background: url(../images/l_bakc.png) no-repeat right .1rem top;
+    -webkit-background-size:.12rem;
+    background-size:.12rem;
+}
+.reg-con header .go-back{
+    width: .42rem;
+    height: .22rem;
+    background: url(../images/re-back.png) no-repeat right .1rem top;
+    -webkit-background-size:.12rem;
+    background-size:.12rem;
+}
+header p{
+    font:400 .3rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+}
+.reg-con header p{
+    color:#666666;
+}
+header .home{
+    display: flex;
+    align-items: center;
+}
+header .home p{
+    font-size: .24rem;
+    margin-right: 0.1rem;
+}
+header .home i{
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/home.png) no-repeat center top;
+    -webkit-background-size:.32rem;
+    background-size:.32rem;
+}
+.reg-con header .home i{
+    background: url(../images/re_home.png) no-repeat center top;
+    -webkit-background-size:.32rem;
+    background-size:.32rem;
+}
+.reg-con .imglogo img{
+    display: block;
+    width: 1.12rem;
+    height: 1.12rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.log-box{
+    width: 6.8rem;
+    margin: auto;
+}
+.log-box li{
+  display: flex;
+  align-items: center;
+  padding: .2rem 0;
+  border-top: 1px solid #eeeeee;
+}
+.log-box li.bor-b{
+    border-bottom: 1px solid #eeeeee;
+    background: url(../images/pass.png) no-repeat left center;
+    -webkit-background-size:.41rem .2rem;
+    background-size:.41rem .2rem;
+}
+.log-box li label{
+    font:400 .26rem "microsoft yahei";
+    color:#333333;
+    width: 1.75rem;
+    padding-left: .45rem;
+}
+.log-box li:nth-child(1) label{
+    background: url(../images/tel.png) no-repeat left center;
+    -webkit-background-size:.39rem .22rem;
+    background-size:.39rem .22rem;
+}
+/* .log-box li:nth-child(2) label{
+    background: url(../images/reset_msg.png) no-repeat left center;
+    -webkit-background-size:.44rem .22rem;
+    background-size:.44rem .22rem;
+} */
+.log-box li.li-1 label{
+    background: url(../images/user.png) no-repeat left center;
+    -webkit-background-size:.38rem .22rem;
+    background-size:.38rem .22rem;
+}
+.log-box li.li-2 label{
+    background: url(../images/tel.png) no-repeat left center;
+    -webkit-background-size:.39rem .22rem;
+    background-size:.39rem .22rem;
+}
+.log-box li.li-3 label{
+    background: url(../images/yzm.png) no-repeat left center;
+    -webkit-background-size:.4rem .26rem;
+    background-size:.4rem .26rem;
+}
+.log-box li.li-4 label{
+    background: url(../images/pass.png) no-repeat left center;
+    -webkit-background-size:.41rem .2rem;
+    background-size:.41rem .2rem;
+}
+.log-box li input{
+    flex: 1;
+    font:400 .26rem "microsoft yahei";
+    color:#333333;
+    height: 100%;
+}
+.log-box li input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999999;
+    font-size: 0.26rem; 
+} 
+.log-box li  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #999999;
+ font-size: 0.26rem; 
+} 
+.log-box li input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #999999;
+ font-size: 0.26rem;
+} 
+.log-box li input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #999999;
+ font-size: 0.26rem; 
+} 
+
+.log-box li input::-webkit-input-placeholder {
+    font-size: 0.26rem;
+}
+.log-box input#submit,.log-box input#zhuce,.log-box input#next_btn,.log-box input#next_btn2{
+    display: block;
+    width: 7rem;
+    height: 0.62rem;
+    background: url(../images/dlu.png) no-repeat center;
+    -webkit-background-size:7rem;
+    background-size:7rem;
+    /* border-radius: .3rem; */
+    font:400 .24rem/.62rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-top: 0.6rem;
+}
+.log-box input#next_btn,.log-box input#next_btn2{
+    border-radius: .04rem;
+}
+.log-box #getyzm,.log-box #r_getyzm{
+    font:400 .22rem/.42rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    width: 1.5rem;
+    background: #0a83dc;
+    border-radius: .04rem;
+}
+.log-con .user{
+    width: 6.7rem;
+    margin:0.4rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.log-con .reg-user{
+    justify-content: flex-end;
+}
+.log-con .user a{
+    font:400 .2rem "microsoft yahei";
+    color:#0a83dc;
+}
+/* 忘记密码页面css start*/
+.reset-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: #fff;
+}
+.reset-con header{
+  margin-bottom: .77rem;
+}
+.reset-con header .go-back,.collect-con header .go-back1{
+    width: .42rem;
+    height: .28rem;
+    background: url(../images/reset_back.png) no-repeat right .1rem top;
+    -webkit-background-size: .16rem .28rem;
+    background-size: .16rem .28rem;
+}
+.reset-con header p,.collect-con header p{
+    color: #333333;
+}
+.reset-con header .home p,.collect-con header .home p{
+    color:#0a83dc;
+}
+.reset-con header .home i,.collect-con header .home i{
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/reset_home.png) no-repeat center top;
+    -webkit-background-size:.32rem;
+    background-size:.32rem;
+}
+.reset-con .reset-h4{
+	font-family: MicrosoftYaHei;
+	font-size: .32rem;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: .3rem;
+    color: #333333;
+    margin-bottom: 0.67rem;
+    margin-left: 0.7rem;
+}
+.reset-con .log-box{
+}
+.reset-con .log-box li{
+    border-top: none;
+    border-bottom: 1px solid #eeeeee;
+    padding: .3rem 0;
+}
+.reset-con .log-box li.bor-b{
+    border: none;
+}
+.reset-con .suc{
+    height: 1.36rem;
+    background: url(../images/suc.png) no-repeat center top;
+    -webkit-background-size:1.36rem;
+    background-size:1.36rem;
+    margin-top: 1.14rem;
+    margin-bottom: 0.4rem;
+}
+.reset-con p{
+    font-family: MicrosoftYaHei;
+	font-size: .40rem;
+	font-weight: normal;
+	line-height: .30rem;
+    color: #333333;
+    text-align: center;
+}
+.reset-con .go-in{
+    display: block;
+    font-family: MicrosoftYaHei;
+    font-size: .24rem;
+	font-weight: normal;
+	line-height: .84rem;
+	letter-spacing:.02rem;
+    color: #ffffff;
+    width: 1.68rem;
+	height: .84rem;
+	background-color: #0a83dc;
+    border-radius:.04rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.64rem;
+}
+/* 忘记密码页面css end*/
+/* 收藏页面css start*/
+.collect-con{
+    width: 7.5rem;
+    height: 100vh;
+    background: #fff;
+    font-family: MicrosoftYaHei;
+}
+.collect-con header{
+    margin-bottom: 0.4rem;
+}
+.coll-num{
+	font-size: .26rem;
+	font-weight: normal;
+	line-height: .40rem;
+    color: #999999;
+    text-align: right;
+    margin-right: 0.3rem;
+    margin-bottom: 0.4rem;
+}
+.coll-num span{
+    color: #0a83dc;
+}
+.collect-con .line{
+    width: 7.50rem;
+    height: .01rem;
+    background-color: #dddddd;
+    margin-bottom: 0.3rem;
+}
+.collect-con .collects{
+
+}
+.collect-con .collects li{
+    margin: .3rem auto 0;
+    padding: .3rem 0 .2rem;
+    box-sizing: border-box;
+    width: 6.8rem;
+    background-color: #e4ebf1;
+	border-radius: .1rem;
+}
+.collect-con .collects li h3{
+	font-size: .32rem;
+	font-weight: normal;
+	line-height: .30rem;
+    color: #0a83dc;
+    background: url(../images/roud-line.png) no-repeat left top;
+    -webkit-background-size: .06rem .3rem;
+    background-size: .06rem .3rem;
+    margin-left: 0.24rem;
+    text-indent: .1rem;
+    margin-bottom: .2rem;
+}
+.collect-con .collects li p{
+	font-size: .26rem;
+	font-weight: normal;
+    line-height: .40rem;
+    text-align: justify;
+    color: #666666;
+    padding: 0 .4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+}
+.collect-con .no-coll{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0.3rem;
+    margin-top: 0.14rem;
+}
+.collect-con .no-coll span{
+	font-size: .24rem;
+	font-weight: normal;
+	line-height: .30rem;
+    color: #999999;
+    flex: 1;
+    text-align: right;
+    margin-right: 0.1rem;
+}
+.collect-con .no-coll i{
+    width: 0.26rem;
+    height: 0.26rem;
+    background: url(../images/no-coll.png) no-repeat left top;
+    -webkit-background-size:  0.26rem;
+    background-size:  0.26rem;
+}
+/* 收藏页面css end*/

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="applicable-device" content="mobile">
+    <title></title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="applicable-device" content="mobile">
+    <link href="http://bj.offcn.com/zg/common/css/animate.wow.css" rel="stylesheet" type="text/css" />
+    <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/my.css">
+    <link rel="stylesheet" href="./alert/alert.css">
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/wow.min.js"></script>
+    <script src="./alert/alert.js"></script>
+    <script>
+        window.onresize = function() {
+            change()
+        }
+        function change() {
+
+            var deviceWidth = document.documentElement.clientWidth;
+
+            var deviceHeight = document.documentElement.clientHeight;
+
+            if(deviceWidth > 750) deviceWidth = 750;
+
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        }
+        change();
+    </script>
+    
+</head>
+<body>
+    <div class="my-con">
+        <h1 class="home_title my_title"><img src="images/h1.png" class="title_img" alt="考试匹配系统"><div class="chilun"></div></h1>
+          <div class="poster">
+            <div class="poster-img">
+                <img src="./images/poster.png" alt="">
+            </div>
+            <p class="username"></p>
+          </div>
+          <ul class="my-items">
+              <li>
+                 <a href="">
+                    <div class="li-l">
+                        <i class="icon-logo"></i>
+                        <p class="kc-name">19课堂</p>
+                      </div>
+                      <div class="icon-go">
+                          <span>免费直播</span>
+                          <i></i>
+                      </div>
+                 </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="my-coll">
+                    <div class="li-l">
+                        <i class="icon-logo"></i>
+                        <p class="kc-name">我的收藏</p>
+                      </div>
+                      <div class="icon-go">
+                          <i></i>
+                      </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="li-l">
+                        <i class="icon-logo"></i>
+                        <p class="kc-name">中公题库</p>
+                      </div>
+                      <div class="icon-go">
+                          <i></i>
+                      </div>
+                </a>
+            </li>
+            <li>
+                <a onClick="NTKF.im_openInPageChat('kf_10353_1539669541476')">
+                    <div class="li-l">
+                        <i class="icon-logo"></i>
+                        <p class="kc-name">在线客服</p>
+                      </div>
+                      <div class="icon-go">
+                          <i></i>
+                      </div>
+                </a>
+            </li>
+          </ul>
+          <div class="logout">
+              退出登录
+          </div>
+          <div class="my-foot">
+            <img src="./images/my_foot.png" alt="">
+        </div>
+    </div>
+    <div class="foot">
+        <a href="home.html" >
+            <div class="im-tab">
+              <img src="./images/it1.png" alt="">
+            </div>
+            <span class="">检索考试</span>
+        </a>
+        <a href="other.html">
+          <div class="im-tab">
+              <img src="./images/it2.png" alt="">
+            </div>
+          <span>其他功能</span>
+        </a>
+        <a href="my.html" class="tbing">
+            <div class="im-tab">
+                <img src="./images/it3-a.png" alt="">
+                </div>
+            <span>我的</span>
+        </a>
+    </div>
+    <script src="./js/storage.js"></script>
+    <script src="./js/my.js"></script>
+    <script type="text/javascript" src="http://bj.offcn.com/statics/js/zgjs/xiaoneng.js"></script>
+</body>
+</html>

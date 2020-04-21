@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta name="applicable-device" content="mobile">
+    <title></title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="applicable-device" content="mobile">
+    <link href="http://bj.offcn.com/zg/common/css/animate.wow.css" rel="stylesheet" type="text/css" />
+    <link href="../css/public.css" rel="stylesheet" type="text/css" />
+    <link href="../css/login.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../css/reset.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="../alert/alert.css">
+    <script src="http://bj.offcn.com/zg/common/js/jquery.min.js"></script>
+    <script src="http://bj.offcn.com/zg/common/js/wow.min.js"></script>
+    <script src="../alert/alert.js"></script>
+    <script src="../js/reset.js"></script>
+    <script>
+        window.onresize = function() {
+            change()
+        }
+        function change() {
+
+            var deviceWidth = document.documentElement.clientWidth;
+
+            var deviceHeight = document.documentElement.clientHeight;
+
+            if(deviceWidth > 750) deviceWidth = 750;
+
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        }
+        change();
+    </script>
+    
+</head>
+<body>
+    <div class="reset-con">
+        <header>
+            <i class="go-back"></i>
+            <p class="login">密码找回</p>
+             <a href="../home.html" class="home">
+                 <p>首页</p>
+                 <i></i>
+             </a>
+        </header>
+        <div class="step1">
+            <h4 class="reset-h4">验证手机号</h4>
+            <ul class="log-box">
+                <li>
+                    <label for="r_phone">手机号码：</label>
+                    <input type="text" id="r_phone" placeholder="请输入手机号">
+                </li>
+                <li class="li-3">
+                    <label for="r_yzm">验证码：</label>
+                    <input type="text" id="r_yzm" placeholder="请输入短信验证码">
+                    <a href="javascript:;" id="r_getyzm">发送验证码</a>
+                </li>
+               <input type="button" value="下一步" id="next_btn">
+            </ul>
+        </div>
+        <div class="step2" style="display: none;">
+            <h4 class="reset-h4">重新设置密码</h4>
+            <ul class="log-box">
+                <li class="li-4">
+                    <label for="pass1">新密码：</label>
+                    <input type="password" id="pass1" placeholder="请设置6~18位登录密码">
+                </li>
+                <li class="bor-b">
+                 <label for="re-pass1">确认密码：</label>
+                 <input type="password" id="re-pass1" placeholder="请再一次输入登录密码">
+             </li>
+               <input type="button" value="下一步" id="next_btn2">
+            </ul>
+        </div>
+        <div class="step3" style="display: none;">
+            <div class="suc"></div>
+            <p>用户登录</p>
+            <a href="login.html" class="go-in">
+                用户登录
+            </a>
+        </div>
+    </div>
+    <script src="http://bj.offcn.com/zg/zg_tuiguang/"></script>
+</body>
+</html>
