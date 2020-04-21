@@ -1,6 +1,7 @@
 .log-con{
     width: 7.5rem;
     height: 100vh;
+    margin: auto;
     background: url(../images/login.png) no-repeat center top #fff;
     -webkit-background-size:7.5rem 5.69rem;
     background-size:7.5rem 5.69rem;
@@ -8,6 +9,7 @@
 .reg-con{
     width: 7.5rem;
     height: 100vh;
+    margin: auto;
     background: #fff;
    
 }
@@ -192,6 +194,7 @@ color: #999999;
 .reset-con{
     width: 7.5rem;
     height: 100vh;
+    margin: auto;
     background: #fff;
 }
 .reset-con header{
@@ -274,6 +277,7 @@ color: #999999;
 .collect-con{
     width: 7.5rem;
     height: 100vh;
+    margin: auto;
     background: #fff;
     font-family: MicrosoftYaHei;
 }

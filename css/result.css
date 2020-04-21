@@ -1,6 +1,7 @@
 .res-con{
     width: 7.5rem;
     height: 100vh;
+    margin: auto;
     background: url(../images/relt.png) no-repeat center top #f2f2f2;
     -webkit-background-size:7.5rem;
     background-size:7.5rem;

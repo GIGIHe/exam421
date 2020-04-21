@@ -1,6 +1,7 @@
 .my-con{
     width: 7.5rem;
     height: 100vh;
+    margin: auto;
     background: url(../images/my.png) no-repeat center top #f2f2f2;
     -webkit-background-size:7.5rem 4.93rem;
     background-size:7.5rem  4.93rem;
